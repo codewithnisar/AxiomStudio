@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="StackAura is a creative technology & AI engineering studio. We build distinctive websites, SaaS digital products, and intelligent experiences for ambitious brands.">
+<meta name="keywords" content="StackAura, Creative Technology, Web Development, SaaS Design, AI Integration, UI UX Design, Digital Agency, Frontend Development">
+<meta name="author" content="StackAura Studio">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0c10">
+<link rel="canonical" href="https://stackaura.studio/">
+<link rel="manifest" href="manifest.json">
+
+<!-- OpenGraph Metadata -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StackAura">
+<meta property="og:url" content="https://stackaura.studio/">
+<meta property="og:title" content="StackAura — Creative Technology & AI Engineering Studio">
+<meta property="og:description" content="Distinctive websites, SaaS digital products, and AI-powered experiences for ambitious digital brands.">
+<meta property="og:image" content="https://stackaura.studio/og-image.jpg">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card Metadata -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@stackaura">
+<meta name="twitter:title" content="StackAura — The Aura Core">
+<meta name="twitter:description" content="Creative technology for ambitious digital brands. Design, Code, Product, and AI.">
+<meta name="twitter:image" content="https://stackaura.studio/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230b0c10'/><text x='50%' y='68%' font-size='65' font-weight='bold' font-family='Space Grotesk, sans-serif' fill='%23caff42' text-anchor='middle'>A</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230b0c10'/><text x='50%' y='68%' font-size='65' font-weight='bold' font-family='Space Grotesk, sans-serif' fill='%23caff42' text-anchor='middle'>A</text></svg>">
+
+<title>StackAura — Creative Technology & AI Engineering Studio</title>
+
+<!-- Fonts Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@500;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+<!-- Modular Production Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- JSON-LD Structured Data Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "StackAura",
+  "url": "https://stackaura.studio/",
+  "logo": "https://stackaura.studio/logo.png",
+  "image": "https://stackaura.studio/og-image.jpg",
+  "description": "StackAura creates distinctive websites, SaaS digital products, and AI-powered web experiences for ambitious digital brands.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://github.com/stackaura",
+    "https://twitter.com/stackaura",
+    "https://linkedin.com/company/stackaura"
+  ],
+  "knowsAbout": ["Web Development", "SaaS Engineering", "AI Integration", "Product Design", "E-commerce"],
+  "priceRange": "$$$"
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="scroll-progress" id="progressBar" aria-hidden="true"></div>
+
+<!-- Top Navigation -->
+<nav class="nav" id="nav" aria-label="Main Navigation">
+  <a class="logo" href="#" aria-label="StackAura Homepage">STACKAURA<i></i></a>
+  
+  <div class="links">
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="nav-actions">
+    <!-- Theme Palette Selector -->
+    <div class="theme-picker" title="Switch Aura Accent Color" aria-label="Aura Theme Accent Switcher">
+      <button class="theme-dot td-lime active" data-color="#caff42" aria-label="Lime Theme"></button>
+      <button class="theme-dot td-blue" data-color="#5367ff" aria-label="Electric Blue Theme"></button>
+      <button class="theme-dot td-cyan" data-color="#00ffcc" aria-label="Cyber Cyan Theme"></button>
+      <button class="theme-dot td-orange" data-color="#ff6b35" aria-label="Sunburst Orange Theme"></button>
+    </div>
+
+    <a class="ctaBtn" href="#contact">Start a Project ↗</a>
+    <button class="hamb" id="hamb" aria-label="Open Mobile Menu" aria-expanded="false" aria-controls="mobileDrawer">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile Navigation Drawer -->
+<div class="mobile-drawer" id="mobileDrawer" aria-hidden="true" role="dialog" aria-label="Mobile Navigation">
+  <div class="drawer-panel">
+    <div>
+      <div class="drawer-head">
+        <a class="logo" href="#">STACKAURA<i></i></a>
+        <button class="drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="drawer-links">
+        <a href="#work" class="drawer-item">Work</a>
+        <a href="#services" class="drawer-item">Services</a>
+        <a href="#about" class="drawer-item">About</a>
+        <a href="#process" class="drawer-item">Process</a>
+        <a href="#contact" class="drawer-item">Contact</a>
+      </nav>
+    </div>
+    <div>
+      <a class="btn" href="#contact" style="width: 100%; justify-content: center;">Start a Project ↗</a>
+      <p style="font-size: 11px; color: var(--muted); margin-top: 20px; font-family: 'DM Mono';">© 2026 STACKAURA STUDIO</p>
+    </div>
+  </div>
+</div>
+
+<main id="main-content">
+  <!-- Hero Section -->
+  <section class="hero wrap">
+    <div class="reveal">
+      <div class="eyebrow"><b>●</b> Creative technology / 2026</div>
+      <h1>BUILD <span class="stroke">THE</span><br>UNEXPECTED.</h1>
+      <p>StackAura creates distinctive websites, digital products and AI-powered experiences for brands that refuse to blend in.</p>
+      <div class="buttons">
+        <a class="btn" href="#contact">Start a Project ↗</a>
+        <a class="btn alt" href="#work">Explore Work ↓</a>
+      </div>
+      <div class="signature">THE AURA CORE / DESIGN · CODE · PRODUCT</div>
+    </div>
+
+    <div class="stage reveal" id="stage" aria-hidden="true">
+      <div class="ring"></div>
+      <div class="ring r2"></div>
+      <div class="core"></div>
+      <div class="float f1">SYSTEM / 01<strong>Design with intent.</strong></div>
+      <div class="float f2">SPEED<strong>98 / 100</strong></div>
+      <div class="float f3">AI × WEB<strong>READY</strong></div>
+      <div class="dot"></div>
+    </div>
+  </section>
+
+  <!-- Marquee Ticker -->
+  <div class="ticker" aria-hidden="true">
+    <div class="track">
+      <span>STACKAURA <em>✦</em> DESIGN <em>✦</em> CODE <em>✦</em> PRODUCT <em>✦</em> AI <em>✦</em></span>
+      <span>STACKAURA <em>✦</em> DESIGN <em>✦</em> CODE <em>✦</em> PRODUCT <em>✦</em> AI <em>✦</em></span>
+    </div>
+  </div>
+
+  <!-- Selected Work Section -->
+  <section id="work">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <div class="eyebrow">01 / Selected work</div>
+          <h2>Digital work<br>with a pulse.</h2>
+        </div>
+        <p>Case-study concepts spanning product, commerce and intelligent interfaces.</p>
+      </div>
+
+      <div class="work">
+        <article class="card big reveal" data-project="orbitos" tabindex="0" role="button" aria-label="View OrbitOS Case Study">
+          <div class="art a1"></div>
+          <div class="go">↗</div>
+          <div class="copy">
+            <small>SaaS / Product</small>
+            <h3>OrbitOS</h3>
+            <p>A focused workspace where complex operations become simple, visual and fast.</p>
+          </div>
+        </article>
+
+        <article class="card small reveal" data-project="forma" tabindex="0" role="button" aria-label="View Forma Case Study">
+          <div class="art a2"></div>
+          <div class="go">↗</div>
+          <div class="copy">
+            <small>E-commerce</small>
+            <h3>Forma</h3>
+            <p>Editorial commerce with a memorable point of view.</p>
+          </div>
+        </article>
+
+        <article class="card small reveal" data-project="neuraldesk" tabindex="0" role="button" aria-label="View Neural Desk Case Study">
+          <div class="art a3"></div>
+          <div class="go">↗</div>
+          <div class="copy">
+            <small>AI / Web App</small>
+            <h3>Neural Desk</h3>
+            <p>An intelligent workspace for modern teams.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="dark" id="services">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <div class="eyebrow">02 / What we build</div>
+          <h2>One studio.<br>Many possibilities.</h2>
+        </div>
+        <p>Design, engineering and strategy connected from day one.</p>
+      </div>
+
+      <div class="services">
+        <div class="service reveal">
+          <b>01</b>
+          <h3>Web Experiences</h3>
+          <p>Distinctive, fast and responsive websites with bespoke animations and zero bloat.</p>
+          <a class="service-link" href="#contact">DISCOVER ↗</a>
+        </div>
+        <div class="service reveal">
+          <b>02</b>
+          <h3>Product Design</h3>
+          <p>UX systems and visual design that make complex SaaS products clear and effortless.</p>
+          <a class="service-link" href="#contact">DISCOVER ↗</a>
+        </div>
+        <div class="service reveal">
+          <b>03</b>
+          <h3>SaaS & Apps</h3>
+          <p>Scalable web applications built for real workflows, high availability and low latency.</p>
+          <a class="service-link" href="#contact">DISCOVER ↗</a>
+        </div>
+        <div class="service reveal">
+          <b>04</b>
+          <h3>E-commerce</h3>
+          <p>Editorial commerce experiences engineered to engage users and maximize conversion.</p>
+          <a class="service-link" href="#contact">DISCOVER ↗</a>
+        </div>
+        <div class="service reveal">
+          <b>05</b>
+          <h3>AI Products</h3>
+          <p>Useful AI agents and LLM features embedded natively into modern web products.</p>
+          <a class="service-link" href="#contact">DISCOVER ↗</a>
+        </div>
+        <div class="service reveal">
+          <b>06</b>
+          <h3>Mobile</h3>
+          <p>Native-feeling, responsive mobile applications designed for small screen interaction.</p>
+          <a class="service-link" href="#contact">DISCOVER ↗</a>
+        </div>
+        <div class="service reveal">
+          <b>07</b>
+          <h3>Brand Systems</h3>
+          <p>Visual identity systems, design tokens, and digital guidelines with room to scale.</p>
+          <a class="service-link" href="#contact">DISCOVER ↗</a>
+        </div>
+        <div class="service reveal">
+          <b>08</b>
+          <h3>Strategy</h3>
+          <p>Technical architecture and product clarity before committing to expensive code.</p>
+          <a class="service-link" href="#contact">DISCOVER ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Bento Grid -->
+  <section id="about">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <div class="eyebrow">03 / The StackAura signature</div>
+          <h2>More character.<br>Less clutter.</h2>
+        </div>
+        <p>Our signature is a balance: expressive enough to be remembered, restrained enough to be useful.</p>
+      </div>
+
+      <div class="bento">
+        <div class="b reveal">
+          <h3>Design first.</h3>
+          <p>Every visual decision earns its place. We eliminate fluff to make core messaging shine.</p>
+          <div class="orb"></div>
+        </div>
+        <div class="b reveal">
+          <h3>Performance is part of design.</h3>
+          <p>Fast experiences feel premium because they respect user attention and load instantly.</p>
+          <div class="orb"></div>
+        </div>
+        <div class="b reveal">
+          <h3>Built to scale.</h3>
+          <p>Reusable component systems and modular architecture keep long-term growth sane.</p>
+          <div class="orb"></div>
+        </div>
+        <div class="b reveal">
+          <h3>AI, without the gimmick.</h3>
+          <p>Technology should solve tangible business problems and feel completely natural.</p>
+          <div class="orb"></div>
+        </div>
+        <div class="b reveal">
+          <h3>Clarity wins.</h3>
+          <p>Beautiful products still need to communicate cleanly and guide users to action.</p>
+          <div class="orb"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process">
+    <div class="wrap process">
+      <div class="reveal">
+        <div class="eyebrow">04 / Process</div>
+        <h2>Make.<br>Test.<br>Refine.</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <span>01</span>
+          <h3>Discover</h3>
+          <p>Audience, business goals, existing bottlenecks and technical constraints.</p>
+        </div>
+        <div class="step reveal">
+          <span>02</span>
+          <h3>Shape</h3>
+          <p>Product direction, user journey, system architecture and release roadmap.</p>
+        </div>
+        <div class="step reveal">
+          <span>03</span>
+          <h3>Design</h3>
+          <p>Visual language, interactive prototypes, design tokens and UI components.</p>
+        </div>
+        <div class="step reveal">
+          <span>04</span>
+          <h3>Build</h3>
+          <p>Clean, performant, accessible production-ready code engineered to spec.</p>
+        </div>
+        <div class="step reveal">
+          <span>05</span>
+          <h3>Launch</h3>
+          <p>Quality assurance testing, speed optimization and seamless production deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Interactive Booking Form -->
+  <section class="contact" id="contact">
+    <div class="wrap reveal">
+      <div class="contact-container">
+        <div>
+          <div class="eyebrow" style="color: rgba(11, 12, 16, 0.7);">05 / Start a conversation</div>
+          <h2>MAKE YOUR<br>MARK.</h2>
+          <p>Have a product, platform or digital experience in mind? Tell us what you're building and let's craft something exceptional together.</p>
+          <a class="btn" href="mailto:hello@stackaura.studio">hello@stackaura.studio ↗</a>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="userName">Your Name</label>
+            <input type="text" id="userName" class="form-control" placeholder="e.g. Alex Morgan" required>
+          </div>
+
+          <div class="form-group">
+            <label for="userEmail">Email Address</label>
+            <input type="email" id="userEmail" class="form-control" placeholder="alex@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label>Project Scope</label>
+            <div class="pill-options" id="scopePills">
+              <span class="pill-option selected" data-value="Web App">Web App</span>
+              <span class="pill-option" data-value="SaaS Product">SaaS Product</span>
+              <span class="pill-option" data-value="AI Experience">AI Experience</span>
+              <span class="pill-option" data-value="E-commerce">E-commerce</span>
+              <span class="pill-option" data-value="Brand Design">Brand Design</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Estimated Budget</label>
+            <div class="pill-options" id="budgetPills">
+              <span class="pill-option" data-value="$5k - $10k">$5k–$10k</span>
+              <span class="pill-option selected" data-value="$10k - $25k">$10k–$25k</span>
+              <span class="pill-option" data-value="$25k - $50k">$25k–$50k</span>
+              <span class="pill-option" data-value="$50k+">$50k+</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="userMessage">Project Details</label>
+            <textarea id="userMessage" class="form-control" placeholder="Tell us about your project goals, timelines, or questions..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Project Brief ↗</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="#">STACKAURA<i></i></a>
+        <p style="margin-top: 14px;">Creative technology & AI engineering studio for ambitious digital brands.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@stackaura.studio">Email Us</a>
+        <a href="#contact">Start a Project</a>
+        <a href="sitemap.xml" target="_blank">Sitemap</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 StackAura Studio. All rights reserved.</span>
+      <span>THE AURA CORE / DESIGN · CODE · PRODUCT · AI</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Interactive Case Study Dialog Modal -->
+<div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+    <div class="modal-tag" id="modalTag">CASE STUDY</div>
+    <h2 class="modal-title" id="modalTitle">Project Title</h2>
+    <div class="modal-preview" id="modalPreview">
+      <span>IMAGE PREVIEW</span>
+    </div>
+    <div class="tech-pills" id="modalTech"></div>
+    <div class="modal-body" id="modalBody">
+      <!-- Dynamic Case Study Content -->
+    </div>
+    <div style="margin-top: 28px; display: flex; gap: 12px;">
+      <a class="btn" id="modalLiveBtn" href="#contact">View Project Concept ↗</a>
+      <button class="btn alt" id="modalDismissBtn">Close Window</button>
+    </div>
+  </div>
+</div>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<!-- Toast Container -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- Modular Production JS Controllers -->
+<script src="assets/js/data.js" defer></script>
+<script src="assets/js/ui.js" defer></script>
+<script src="assets/js/theme.js" defer></script>
+<script src="assets/js/modal.js" defer></script>
+<script src="assets/js/form.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
