@@ -1,5 +1,5 @@
 /**
- * StackAura — UI & Interactions Component Controller
+ * Axiom Studio — UI & Interactions Component Controller
  */
 
 // Toast Notification System

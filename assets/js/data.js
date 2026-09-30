@@ -1,5 +1,5 @@
 /**
- * StackAura — Project Case Studies Data Registry
+ * Axiom Studio — Project Case Studies Data Registry
  */
 window.PROJECTS_DATA = {
   orbitos: {

@@ -1,5 +1,5 @@
 /**
- * StackAura — Case Study Modal Dialog Manager
+ * Axiom Studio — Case Study Modal Dialog Manager
  */
 window.initModal = function() {
   const projectModal = document.getElementById('projectModal');

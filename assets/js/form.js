@@ -1,10 +1,8 @@
 /**
- * StackAura — Contact Form Validation & Serverless Email Submission Controller
+ * Axiom Studio — Contact Form Controller (Direct WhatsApp Integration)
  */
 window.initContactForm = function() {
-  // Web3Forms Access Key Configuration
-  // Get a free key instantly at https://web3forms.com (Zero backend code required!)
-  // Paste your access key below to receive form submissions straight to your email.
+  const WHATSAPP_NUMBER = "923350991548"; // International format for 03350991548
   const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
 
   function setupPills(containerId) {
@@ -61,13 +59,23 @@ window.initContactForm = function() {
     const originalBtnText = submitBtn ? submitBtn.textContent : 'Send Project Brief ↗';
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending Brief...';
+      submitBtn.textContent = 'Opening WhatsApp...';
     }
 
     try {
-      // If Web3Forms access key is configured, post to Web3Forms API
+      // Formatted WhatsApp Message
+      const whatsappText = `*New Project Inquiry — Axiom Studio*\n\n` +
+        `👤 *Name:* ${name}\n` +
+        `✉️ *Email:* ${email}\n` +
+        `🚀 *Scope:* ${selectedScope}\n` +
+        `💰 *Budget:* ${selectedBudget}\n\n` +
+        `📝 *Details:* ${message}`;
+
+      const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappText)}`;
+
+      // Optional background submit to Web3Forms if key is provided
       if (WEB3FORMS_ACCESS_KEY && WEB3FORMS_ACCESS_KEY !== "YOUR_WEB3FORMS_ACCESS_KEY") {
-        const response = await fetch('https://api.web3forms.com/submit', {
+        fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -80,27 +88,17 @@ window.initContactForm = function() {
             scope: selectedScope,
             budget: selectedBudget,
             message: message,
-            subject: `New StackAura Inquiry from ${name}`
+            subject: `New Axiom Studio Inquiry from ${name}`
           })
-        });
-
-        const result = await response.json();
-        if (result.success) {
-          if (typeof window.showToast === 'function') {
-            window.showToast(`Thank you ${name}! Your project inquiry has been sent.`, "✓");
-          }
-        } else {
-          if (typeof window.showToast === 'function') {
-            window.showToast(result.message || "Failed to send message.", "⚠️");
-          }
-        }
-      } else {
-        // Demonstration mode when key is placeholder
-        await new Promise(resolve => setTimeout(resolve, 800));
-        if (typeof window.showToast === 'function') {
-          window.showToast(`Thank you ${name}! Your ${selectedScope} project inquiry has been received.`, "✓");
-        }
+        }).catch(() => {});
       }
+
+      if (typeof window.showToast === 'function') {
+        window.showToast(`Opening WhatsApp chat for 03350991548...`, "✓");
+      }
+
+      // Open WhatsApp chat directly with pre-filled message
+      window.open(whatsappUrl, '_blank');
 
       contactForm.reset();
       
@@ -111,7 +109,7 @@ window.initContactForm = function() {
 
     } catch (err) {
       if (typeof window.showToast === 'function') {
-        window.showToast("Connection error. Please try again or email hello@stackaura.studio", "⚠️");
+        window.showToast("Connection error. Please try again or email nissarralee11255@gmail.com", "⚠️");
       }
     } finally {
       if (submitBtn) {

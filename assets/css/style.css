@@ -1,5 +1,5 @@
 /* ==========================================================================
-   StackAura — Production Design System & CSS Stylesheet
+   Axiom Studio — Production Design System & CSS Stylesheet
    ========================================================================== */
 
 /* Design Tokens & Theme Variables */
@@ -157,7 +157,7 @@ a {
   width: 100%;
 }
 
-/* Aura Accent Theme Picker */
+/* Axiom Accent Theme Picker */
 .theme-picker {
   display: flex;
   align-items: center;
@@ -304,7 +304,7 @@ h1 {
   color: #888;
 }
 
-/* 3D Aura Core Stage */
+/* 3D Axiom Core Stage */
 .stage {
   height: 590px;
   position: relative;
@@ -337,7 +337,7 @@ h1 {
 }
 
 .core::after {
-  content: "AURA / CORE";
+  content: "AXIOM / CORE";
   position: absolute;
   left: 25px;
   bottom: 22px;

@@ -1,5 +1,5 @@
 /**
- * StackAura — Main Application Entry Point
+ * Axiom Studio — Main Application Entry Point
  */
 document.body.classList.add('js-enabled');
 

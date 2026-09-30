@@ -1,5 +1,5 @@
 /**
- * StackAura — Theme Accent Palette Switcher Controller
+ * Axiom Studio — Theme Accent Palette Switcher Controller
  */
 window.initThemePicker = function() {
   const themeDots = document.querySelectorAll('.theme-dot');
@@ -12,7 +12,7 @@ window.initThemePicker = function() {
       document.documentElement.style.setProperty('--accent', color);
       document.documentElement.style.setProperty('--lime', color);
       if (typeof window.showToast === 'function') {
-        window.showToast(`Aura accent color updated to ${color}`);
+        window.showToast(`Axiom accent color updated to ${color}`);
       }
     });
   });

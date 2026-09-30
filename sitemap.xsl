@@ -7,7 +7,7 @@
   <xsl:template match="/">
     <html lang="en">
       <head>
-        <title>XML Sitemap — StackAura Studio</title>
+        <title>XML Sitemap — Axiom Studio</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -141,7 +141,7 @@
         <div class="container">
           <div class="header">
             <div>
-              <a href="index.html" class="logo">STACKAURA<i></i></a>
+              <a href="index.html" class="logo">AXIOM STUDIO<i></i></a>
               <div class="tag" style="margin-top: 16px;">Sitemap Protocol</div>
               <h1>XML Site Index</h1>
               <p class="desc">This is a human-readable XML sitemap generated for search engine indexing.</p>
@@ -185,7 +185,7 @@
           </div>
 
           <div class="footer">
-            © 2026 STACKAURA STUDIO — ALL RIGHTS RESERVED
+            © 2026 AXIOM STUDIO — ALL RIGHTS RESERVED
           </div>
         </div>
       </body>
