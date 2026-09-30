@@ -9,7 +9,7 @@ window.PROJECTS_DATA = {
     tech: ["React", "TypeScript", "Node.js", "Canvas API", "TailwindCSS"],
     body: `
       <p>OrbitOS is an enterprise SaaS platform engineered for multi-disciplinary teams managing complex digital workflows. By converting tabular operations into a fluid spatial canvas, team collaboration becomes intuitive and real-time.</p>
-      <h4 style="color:var(--ink); margin: 20px 0 8px; font-family:'Space Grotesk';">Key Features & Architecture:</h4>
+      <h3 style="color:var(--ink); margin: 20px 0 8px; font-family:'Space Grotesk';">Key Features & Architecture:</h3>
       <ul>
         <li><strong>Spatial Workspace:</strong> Drag-and-drop infinite canvas with zero-latency position sync.</li>
         <li><strong>Command Palette:</strong> Keyboard-driven workflows for speed power-users.</li>
@@ -25,7 +25,7 @@ window.PROJECTS_DATA = {
     tech: ["Next.js", "Shopify Storefront API", "WebGL", "GraphQL", "Vanilla CSS"],
     body: `
       <p>Forma redefines modern retail by merging luxury print editorial aesthetic with high-conversion e-commerce technology. Designed with bold typography and seamless transaction flows.</p>
-      <h4 style="color:var(--ink); margin: 20px 0 8px; font-family:'Space Grotesk';">Key Features & Architecture:</h4>
+      <h3 style="color:var(--ink); margin: 20px 0 8px; font-family:'Space Grotesk';">Key Features & Architecture:</h3>
       <ul>
         <li><strong>Headless Storefront:</strong> Lightning-fast page loads under 800ms using server-side edge caching.</li>
         <li><strong>Dynamic Lookbooks:</strong> Interactive hotspot image galleries linked directly to mini-carts.</li>
@@ -41,7 +41,7 @@ window.PROJECTS_DATA = {
     tech: ["Python", "FastAPI", "LangChain", "React", "WebSockets"],
     body: `
       <p>Neural Desk is an AI-native desktop and web workspace built for modern engineering teams. It coordinates asynchronous AI agents to draft code, automate doc updates, and analyze telemetry.</p>
-      <h4 style="color:var(--ink); margin: 20px 0 8px; font-family:'Space Grotesk';">Key Features & Architecture:</h4>
+      <h3 style="color:var(--ink); margin: 20px 0 8px; font-family:'Space Grotesk';">Key Features & Architecture:</h3>
       <ul>
         <li><strong>Streamed LLM Responses:</strong> Low-latency streaming interface using persistent WebSockets.</li>
         <li><strong>Context Aware Memory:</strong> Local vector index that grounds LLM suggestions in user codebase context.</li>
